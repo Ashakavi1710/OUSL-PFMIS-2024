@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PF-MIS Admin Login</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #d8bcb7;
+        }
+
+        .container {
+            display: flex;
+            background-color: #f0e6e6;
+            width: 800px; /* Adjust width as needed */
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+        .form-side {
+            padding: 160px;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #d8bcb7;
+        }
+
+        .header {
+            
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 60px;
+        }
+
+        .header img {
+            width: 50px;
+            margin-left: 10px;
+        }
+
+        .header h1 {
+            color: #7a2f2f;
+            margin: 0;
+            font-size: 60px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #7a2f2f; /* This adds the underline */
+            display: inline-block; /* To ensure the underline doesn't stretch full width */
+        }
+
+        h2 {
+            color: #bf2f2f;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .input-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .input-group label {
+            color: #7a2f2f;
+            width: 30%;
+            text-align: right;
+            margin-right: 10px;
+        }
+
+        .input-group input {
+            width: 70%;
+            padding: 10px;
+            border: 1px solid #7a2f2f;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .button-group {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        button {
+            background-color: #7a2f2f;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #bf2f2f;
+        }
+
+        .image-side {
+            width: 50%;
+            background-image: url('../Images/background-image.png'); /* Replace with your image path */
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Form side -->
+        <div class="form-side">
+            <div class="header">
+                <img src="../Images/logo.png" alt="Logo"> <!-- Replace with your logo path -->
+                <h1>PF - MIS</h1>
+            </div>
+            <h2>Admin</h2>
+            <form>
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="button-group">
+                    <button type="submit" class="login-btn">Login</button>
+                    <button type="button" class="change-password-btn">Change Password</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Image side -->
+        <div class="image-side"></div>
+    </div>
+</body>
+</html>
