@@ -1,80 +1,94 @@
 body {
-    margin: 0;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    background-color: #d3b4a4;
+  margin: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: #d3b4a4;
 }
 
 .container {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: center;
-    text-align: left;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: flex-start;
+  text-align: center;
+}
+.container1 {
+  width: 100%;
+  height: 10vh;
+  text-align: left;
 }
 
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
-    margin-left: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-bottom: 20px;
+  margin-left: 200px;
 }
 
 .logo img {
-    width: 100px;
-    margin-right: 10px;
+  width: 100px;
+  margin-right: 10px;
 }
 
 .header h1 {
-    color: #862222;
-    font-size: 4.5rem;
-    margin-top: 5px;
-    margin-bottom: 1px;
-    align-content: top;
+  color: #862222;
+  font-size: 4.5rem;
+  margin-top: 5px;
+  margin-bottom: 1px;
+  align-content: top;
 }
 
-.form {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 0;
-    text-align: left;
-    margin-left: 100px;
+.sub-header h2 {
+  color: #862222;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  font-size: 2.5rem;
+  line-height: 1.5;
+}
+.label {
+  font-size: 20px;
+  font-weight: bold;
+}
+.label1 {
+  font-size: 20px;
+  font-weight: bold;
 }
 
-.column {
-    width: 50%;
+.label2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.label3 {
+  font-size: 20px;
+  font-weight: bold;
 }
 
-.column p {
-    font-size: 25px;
-    color: #3a2d2d;
+.buttons {
+  margin-bottom: 40px;
 }
 
-.footer {
-    text-align: right;
-    padding-top: 20px;
-    margin-right: 100px;
+button {
+  background-color: #d08b79;
+  color: #862222;
+  border: none;
+  padding: 10px 30px;
+  font-size: 3.25rem;
+  margin: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-.update-btn {
-    background-color: #952514;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 20px;
-}
-
-.update-btn:hover {
-    background-color: #441410;
+button:hover {
+  background-color: #bb7664;
 }
 
 .custom-line {
-    border-color: #862222;
-    margin-left: -650px;
-    margin-right: -450px;
-    border-width: 3px;
+  border-color: #862222;
+  margin-left: -200px;
+  margin-right: -400px;
+  border-width: 3px;
 }

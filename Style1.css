@@ -1,114 +1,71 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #d5b4b4;
+  margin: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: #d3b4a4;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: flex-start;
+  text-align: center;
 }
 
-.login-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 80%;
-    max-width: 900px;
-    border-radius: 10px;
-    background-color: #f2e5e5;
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-bottom: 20px;
+  margin-left: 200px;
 }
 
-.login-box {
-    padding: 30px;
-    background-color: #d5b4b4;
-    width: 350px;
-    text-align: center;
-    border-radius: 10px;
+.logo img {
+  width: 100px;
+  margin-right: 10px;
 }
 
-.title {
-    font-size: 28px;
-    font-weight: bold;
-    color: #8b1e1e;
-    margin-bottom: 10px;
+.header h1 {
+  color: #862222;
+  font-size: 4.5rem;
+  margin-top: 5px;
+  margin-bottom: 1px;
+  align-content: top;
 }
 
-h2 {
-    font-size: 24px;
-    color: #c52e2e;
-    margin-bottom: 30px;
+.sub-header h2 {
+  color: #862222;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-bottom: 40px;
+  margin-top: 30px;
+  font-size: 2rem;
+  line-height: 1.5;
 }
 
-.input-group {
-    margin-bottom: 20px;
-    text-align: left;
+.buttons {
+  margin-bottom: 40px;
 }
 
-.input-group label {
-    display: block;
-    font-size: 16px;
-    color: #333;
-    margin-bottom: 5px;
+button {
+  background-color: #d08b79;
+  color: #862222;
+  border: none;
+  padding: 15px 30px;
+  font-size: 3.25rem;
+  margin: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-.input-group input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
+button:hover {
+  background-color: #bb7664;
 }
 
-.button-group {
-    display: flex;
-    justify-content: space-between;
-}
-
-.login-btn {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: #8b1e1e;
-    color: white;
-    cursor: pointer;
-    font-size: 14px;
-    width: 40%;
-} 
-
-.change-password-btn {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: #8b1e1e;
-    color: white;
-    cursor: pointer;
-    font-size: 14px;
-    width: 55%;
-}
-
-.change-password-btn {
-    background-color: #a57d6d;
-}
-
-.login-btn:hover, .change-password-btn:hover {
-    opacity: 0.8;
-}
-
-.background-image {
-    width: 50%;
-    height: 100%;
-    border-radius: 0 10px 10px 0;
-    overflow: hidden;
-}
-
-.background-image img {
-    width: 50%;
-    height: 50%;
-    object-fit: cover;
+.custom-line {
+  border-color: #862222;
+  margin-left: -200px;
+  margin-right: -200px;
+  border-width: 3px;
 }
