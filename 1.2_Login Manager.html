@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PF - MIS Login</title>
+    <style>
+          body {
+            margin: 0;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            background-color: #d3b4a4;
+        }
+        
+        .container {
+            width: 80%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            justify-content: flex-start;
+            text-align: center;
+        }
+        
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            margin-left: 200px;
+        }
+        
+        .logo img {
+            width: 100px;
+            margin-right: 10px;
+        }
+        
+        .header h1 {
+            color: #862222;
+            font-size: 4.5rem;
+            margin-top: 5px;
+            margin-bottom: 1px;
+            align-content: top;
+        }
+        
+        .title {
+            font-size: 28px;
+            font-weight: bold;
+            color: #8b1e1e;
+            margin-bottom: 10px;
+        }
+        
+        h2 {
+            font-size: 50px;
+            color: #c52e2e;
+            margin-bottom: 30px;
+        }
+        
+        .input-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        
+        .input-group label {
+            display: block;
+            font-size: 30px;
+            color: #ad2727;
+            margin-bottom: 5px;
+        }
+        
+        .input-group input {
+            width: 600px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+        
+        .button-group {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .login-btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #8b1e1e;
+            color: white;
+            cursor: pointer;
+            font-size: 20px;
+            width: 200px;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            margin-top: 30px;
+            margin-right: 50px;
+            margin-bottom: 50px;
+        } 
+        
+        .change-password-btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #8b1e1e;
+            color: white;
+            cursor: pointer;
+            font-size: 20px;
+            width: 200px;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            margin-top: 30px;
+            margin-right: 50px;
+            margin-bottom: 50px;
+        }
+        
+        .change-password-btn {
+            background-color: #a57d6d;
+        }
+        
+        .login-btn:hover, .change-password-btn:hover {
+            opacity: 0.8;
+        }
+        
+        .background-image {
+                width: 250px;
+                height: 100%;
+                float: right;
+                padding-right: 1px;
+        }
+        .image-right {
+                position: absolute;
+                right: 0;
+                top: 1%;
+        }
+        
+        .custom-line {
+            border-color: #862222;
+            margin-left: -450px;
+            margin-right: -300px;
+            border-width: 3px;
+        }
+       
+        </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+              <h1><img src="Profile.png" alt="Logo" height="100px" width="400px">PF - MIS</h1><br>
+              <hr class="custom-line">
+              <h2>MANAGER LOGIN</h2>
+              <form action="LoginManager.php" method="POST">
+                  <div class="input-group">
+                      <label for="username">Username</label>
+                      <input type="text" id="username" name="username">
+                  </div>
+                  <div class="input-group">
+                      <label for="password">Password</label>
+                      <input type="password" id="password" name="password">
+                  </div>
+                  <div class="button-group">
+                      <button type="submit" class="login-btn">Login</button>
+                      <button type="button" class="change-password-btn">Change Password</button>
+                  </div>
+              </form>
+              
+            </div>
+        </div>
+        <div class="background-image">
+            <img src="Wallpaper.png" alt="Background Image" class="image-right">
+        </div>
+    </div>
+</body>
+</html>

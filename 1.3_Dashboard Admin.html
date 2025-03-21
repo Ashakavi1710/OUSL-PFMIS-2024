@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PF - MIS Dashboard</title>
+    <style>
+       body {
+                margin: 0;
+                font-family:Georgia, 'Times New Roman', Times, serif;
+                background-color: #d3b4a4;
+            }
+
+            .container {
+                width: 100%;
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                text-align: center;
+            }
+
+            .button-container, .button-container2 {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 100px;
+                margin-top: 100px;
+            }
+
+            .header {
+                display: flex;
+                align-items: center;
+                justify-content: left;
+                margin-bottom: 20px;
+                margin-left: 50px;
+            }
+
+            .logo img {
+                width: 100px;
+                margin-right: 10px;
+            }
+
+            h1 {
+                color: #862222;
+                font-size: 4.5rem;
+                margin-top: 5px;
+                margin-bottom: 1px;
+                text-align: center;
+            }
+
+            h2 {
+                color: #606016;
+                font-size: 3rem;
+                margin-top: 20px;
+                margin-bottom: 1px;
+                text-align: center;
+            }   
+
+            .dashboard-container {
+                width: 90%;
+            }
+
+            .main-content {
+                flex: 1;
+                background-color: #f2e5e5;
+                width: 100%;
+            }
+
+            .dashboard-btn {
+                width: 380px;
+                height: 100px;
+                background-color: #f5f1f1;
+                border: 2px solid #8b1e1e;
+                border-radius: 10px;
+                font-size: 32px;
+                color: #8b1e1e;
+                font-weight: bold;
+                cursor: pointer;
+                font-style: italic;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+
+            .dashboard-btn:hover {
+                background-color: #bb7664;
+                border-color: #c52e2e;
+            }
+
+            .custom-line {
+                border-color: #862222;
+                width: 1625px;
+                border-width: 3px;
+            }
+</style>
+</head>
+<body>
+    <div class="dashboard-container">
+                    <div class="logo">
+            
+        <div class="container">
+            <div class="header">
+                <div class="logo">
+                  <h1><img src="Profile.png" alt="Logo" height="100px" width="400px">PF - MIS</h1><br>
+         <hr class="custom-line">
+            <div class="button-container">
+                <button class="dashboard-btn" onclick='window.location.href="DisplayPI.php"'>Personal Details</button>
+                <button class="dashboard-btn" onclick='window.location.href="empSpLeave.php"'>Special Leave</button>
+                <button class="dashboard-btn" onclick='window.location.href="empsendrequest.php"'>Employee Request</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
